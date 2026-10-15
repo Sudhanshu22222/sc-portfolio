@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Sudhanshu Chouhan Cyber Shield Logo">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5AA32" />
+      <stop offset="50%" stop-color="#E87945" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC86B" />
+      <stop offset="100%" stop-color="#F5AA32" />
+    </linearGradient>
+    <radialGradient id="shieldBgGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#241B3B" />
+      <stop offset="100%" stop-color="#0E0B19" />
+    </radialGradient>
+    <filter id="cyberGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#F5AA32" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Hexagonal Cyber Shield Outer Body -->
+  <path 
+    d="M32 4 L56 15 V36 C56 48.5 32 59.5 32 59.5 C32 59.5 8 48.5 8 36 V15 Z" 
+    fill="url(#shieldBgGlow)" 
+    stroke="url(#shieldGrad)" 
+    stroke-width="2.2" 
+    stroke-linejoin="round"
+    filter="url(#cyberGlow)"
+  />
+
+  <!-- Subtle Inner Defensive Plate Contour -->
+  <path 
+    d="M32 9 L51 18.5 V34 C51 44.5 32 53.5 32 53.5 C32 53.5 13 44.5 13 34 V18.5 Z" 
+    fill="none" 
+    stroke="#382C52" 
+    stroke-width="1" 
+    stroke-dasharray="2 2"
+  />
+
+  <!-- Circuit Traces & Telemetry Nodes -->
+  <path d="M16 22 L23 22 L26 25" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <circle cx="16" cy="22" r="1.8" fill="#A78BFA" />
+
+  <path d="M48 22 L41 22 L38 25" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <circle cx="48" cy="22" r="1.8" fill="#A78BFA" />
+
+  <path d="M32 6 V12" stroke="#F5AA32" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="32" cy="12" r="1.8" fill="#F5AA32" />
+
+  <!-- Geometric SC Cyber Monogram -->
+  <!-- 'S' Letterform -->
+  <path 
+    d="M28.5 25 H21 C18.8 25 17.5 26.2 17.5 28 V29.5 C17.5 31.2 18.8 32.2 21 32.5 H25 C27.2 32.8 28.5 33.8 28.5 35.5 V37 C28.5 38.8 27.2 40 25 40 H17" 
+    stroke="url(#textGrad)" 
+    stroke-width="2.8" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    fill="none" 
+  />
+
+  <!-- 'C' Letterform -->
+  <path 
+    d="M46.5 26 H39 C36.8 26 35 27.8 35 30 V35 C35 37.2 36.8 39 39 39 H46.5" 
+    stroke="url(#textGrad)" 
+    stroke-width="2.8" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    fill="none" 
+  />
+
+  <!-- Bottom Apex Node -->
+  <circle cx="32" cy="49" r="1.5" fill="#F5AA32" opacity="0.8" />
+  <path d="M32 51 V54" stroke="#F5AA32" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+</svg>
