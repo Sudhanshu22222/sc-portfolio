@@ -1,12 +1,12 @@
 :root{
   --bg:#0B0913;--bg2:#100D1D;--card:#171325;--elev:#20192E;--amber:#F5AA32;--orange:#E87945;--purple:#A78BFA;
   --text:#F8F6FC;--text2:#B6B0C5;--border:#332941;--accent-text:#F5AA32;--on-accent:#0B0913;--header-bg:rgba(11,9,19,.82);
-  --grad:linear-gradient(135deg,#F5AA32,#E87945);--font:'Manrope','Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+  --grad:linear-gradient(135deg,#F5AA32,#E87945);--grad-text:linear-gradient(135deg,#F5AA32,#E87945);--font:'Manrope','Inter','Segoe UI',system-ui,-apple-system,sans-serif;
   --ease:cubic-bezier(.22,.8,.3,1);color-scheme:dark;
 }
 :root[data-theme="light"]{
   --bg:#FBF7F1;--bg2:#F4EDE3;--card:#FFFFFF;--elev:#F1E8DC;--text:#1D1727;--text2:#5A5268;--border:#E3D8CA;
-  --accent-text:#B24E17;--on-accent:#1D1727;--header-bg:rgba(251,247,241,.85);color-scheme:light;
+  --accent-text:#B24E17;--grad-text:linear-gradient(135deg,#C2570F,#B24E17);--on-accent:#1D1727;--header-bg:rgba(251,247,241,.85);color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
@@ -24,8 +24,8 @@ code{background:var(--elev);padding:.1em .4em;border-radius:6px;font-size:.9em}
 .eyebrow.sm{font-size:.7rem;margin-bottom:8px}
 .h2{font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.1;font-weight:800;letter-spacing:-.03em;max-width:18ch;margin-bottom:clamp(28px,4vw,48px)}
 .display{font-size:clamp(3rem,9vw,6.6rem);line-height:.98;font-weight:800;letter-spacing:-.045em;margin-bottom:28px}
-.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-:root[data-theme="light"] .grad{background:linear-gradient(135deg,#C2570F,#B24E17)}
+.grad{background-image:var(--grad-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+:root[data-theme="light"] .grad{background-image:var(--grad-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 .lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--text);max-width:56ch}.lead.sm{margin-bottom:28px}
 .muted{color:var(--text2)}.sm{font-size:.9rem}.body{color:var(--text2);margin-bottom:18px;max-width:60ch;font-size:1.05rem}
 .note{color:var(--text2);font-size:.92rem;margin-top:24px}
